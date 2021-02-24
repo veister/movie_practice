@@ -1,0 +1,17 @@
+import React from "react";
+import PropTypes from "prop-types";
+
+function Movie({ id, year, runtime, title, summary, poster }) {
+  return <h5>{title}</h5>;
+}
+
+Movie.prototype = {
+  id: PropTypes.number.isRequired,
+  year: PropTypes.number.isRequired,
+  runtime: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  summary: PropTypes.string.isRequired,
+  poster: PropTypes.string.isRequired,
+};
+
+export default Movie;
