@@ -42,7 +42,6 @@ class Home extends React.Component {
                 genres={movie.genres}
               />
             ))}
-            console.log(movie);
           </div>
         )}
       </section>
